@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 200, 300,400, 500, 600, 700, 800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    max-width: 1200px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img {
+    max-width: 340px;
+    margin-bottom: 150px;
+}
+
+.content .thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.content .thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content .thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.content .thumb li img {
+    max-width: 60px;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+
+@media only screen and (min-width: 201px) and (max-width: 800px) {
+
+    /* For smaller screens */
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .logo {
+        max-width: 50px;
+        
+    }
+    section {
+        padding-top: 75px;
+        padding-left: 50px;
+       
+    }
+
+    .content .textBox h2 {
+        font-size: 3em;
+        margin-top: 50px;
+        /* adjust this to your liking */
+    }
+
+    .content .textBox h2 span {
+        color: #017143;
+        font-size: 100%;
+        /* adjust this percentage to your liking */
+        font-weight: 900;
+    }
+
+    .content .imgBox {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .content .textBox {
+        order: 3;
+    }
+
+    .content .imgBox {
+        order: 1;
+    }
+
+
+    .circle {
+        margin-top: 200px;
+        clip-path: circle(600px at right 800px);
+    }
+
+}
+
+
+
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+
+    /* For larger screens */
+    .content .textBox h2 {
+        font-size: 2em;
+        /* adjust this to your liking */
+    }
+
+    .content .textBox h2 span {
+        color: #017143;
+        font-size: 90%;
+        /* adjust this percentage to your liking */
+        font-weight: 900;
+    }
+
+    .content .imgBox {
+        width: 80%;
+        justify-content: center;
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+}
