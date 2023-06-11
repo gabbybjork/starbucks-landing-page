@@ -2,6 +2,7 @@
 
 This project is a responsive landing page for a fictional Starbucks website. It's designed to provide a seamless user experience across different devices. 
 
+[View Demo](https://splendid-moxie-764dd8.netlify.app/)
 ## Technologies Used
 
 The primary technologies used in this project are HTML and CSS. The HTML is used to structure the content of the website and the CSS is used to style the website and make it responsive for different devices.
